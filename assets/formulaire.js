@@ -69,7 +69,7 @@
         })
         .catch(function () {
           if (zone) etat(zone, 'erreur',
-            'L\u2019envoi a échoué. Appelez-nous ou écrivez à contact@asyadeco.fr.');
+            'L\u2019envoi a échoué. Appelez-nous au 06 67 38 05 28.');
           if (bouton) { bouton.disabled = false; bouton.textContent = libelle; }
         });
     });
