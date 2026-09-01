@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demander un devis de rénovation | ASYA DECO</title>
+<meta name="description" content="Décrivez votre projet en deux minutes. Rappel dans la journée, visite technique gratuite, devis détaillé sous 48 heures dans l&#x27;est parisien et à Paris.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="canonical" href="https://www.asyadeco.fr/devis.html">
+<meta property="og:title" content="Demander un devis de rénovation | ASYA DECO">
+<meta property="og:description" content="Décrivez votre projet en deux minutes. Rappel dans la journée, visite technique gratuite, devis détaillé sous 48 heures dans l&#x27;est parisien et à Paris.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"ASYA DECO","legalName":"ASYA DECO","description":"Entreprise de rénovation intérieure : peinture, plâtrerie, parquet, carrelage, agencement sur mesure, papier peint, peintures décoratives et vitrerie.","vatID":"FR90101699676","taxID":"101699676","telephone":"+33667380528","email":"contact@asyadeco.fr","address":{"@type":"PostalAddress","streetAddress":"[adresse de l'atelier]","postalCode":"94360","addressLocality":"Bry-sur-Marne","addressRegion":"Île-de-France","addressCountry":"FR"},"areaServed":[{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":48.8386,"longitude":2.5236},"geoRadius":"25000"},{"@type":"AdministrativeArea","name":"Île-de-France"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}],"priceRange":"€€"}</script>
+
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="entete"><div class="wrap">
+  <a class="marque" href="index.html">ASYA DECO<span>Rénovation intérieure · Bry-sur-Marne</span></a>
+  <nav class="nav" aria-label="Navigation principale">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-liens">Menu</button>
+    <div class="menu-liens" id="menu-liens"><a href="prestations.html">Prestations</a><a href="realisations.html">Réalisations</a><a href="professionnels.html" class="masque">Professionnels</a><a href="entreprise.html" class="masque">Entreprise</a><a href="contact.html">Contact</a></div>
+    <a class="tel" href="tel:+33XXXXXXXXX">[06 XX XX XX XX]</a>
+    <a class="btn" href="devis.html">Devis</a>
+  </nav>
+</div></header>
+<main id="contenu">
+
+<div class="wrap">
+<section class="bloc"><div class="tete"><p class="titre">Demande de devis</p><p class="cote">Réponse sous 24 h, devis sous 48 h</p></div><div class="corps"><h1>Demander un devis</h1><p class="intro chapo saut">Décrivez votre projet en deux minutes. Nous vous rappelons dans la journée pour fixer la visite technique, et vous recevez le devis détaillé sous 48 heures après notre passage.</p><form class="form saut" method="post" action="/api/devis" data-envoi novalidate>
+    <div class="piege" aria-hidden="true"><label for="societe_web">Ne pas remplir</label><input id="societe_web" name="societe_web" tabindex="-1" autocomplete="off"></div>
+    <div class="champ">
+      <label for="cp">Code postal du chantier</label>
+      <input id="cp" name="code_postal" inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" required>
+      <span class="aide">Il nous sert à vérifier que le chantier est dans notre zone d'intervention.</span>
+    </div>
+    <div class="champ">
+      <label>Type de projet</label>
+      <div class="choix">
+        <label><input type="radio" name="projet" value="une-piece" required> Une pièce</label>
+        <label><input type="radio" name="projet" value="plusieurs-pieces"> Plusieurs pièces</label>
+        <label><input type="radio" name="projet" value="logement-complet"> Logement complet</label>
+        <label><input type="radio" name="projet" value="professionnel"> Chantier professionnel</label>
+      </div>
+    </div>
+    <div class="champ">
+      <label>Lots concernés</label>
+      <div class="choix">
+        <label><input type="checkbox" name="lots" value="peinture"> Peinture</label>
+        <label><input type="checkbox" name="lots" value="platrerie"> Plâtrerie, cloisons</label>
+        <label><input type="checkbox" name="lots" value="parquet"> Parquet</label>
+        <label><input type="checkbox" name="lots" value="carrelage"> Carrelage</label>
+        <label><input type="checkbox" name="lots" value="agencement"> Agencement</label>
+        <label><input type="checkbox" name="lots" value="papier-peint"> Papier peint</label>
+        <label><input type="checkbox" name="lots" value="decoratif"> Peinture décorative</label>
+        <label><input type="checkbox" name="lots" value="vitrerie"> Vitrerie</label>
+        <label><input type="checkbox" name="lots" value="je-ne-sais-pas"> Je ne sais pas encore</label>
+      </div>
+    </div>
+    <div class="paire">
+      <div class="champ">
+        <label for="surface">Surface approximative</label>
+        <input id="surface" name="surface" inputmode="numeric" placeholder="en m²">
+      </div>
+      <div class="champ">
+        <label for="delai">Quand souhaitez-vous démarrer</label>
+        <select id="delai" name="delai">
+          <option value="">Choisir</option>
+          <option>Dès que possible</option>
+          <option>Dans 1 à 3 mois</option>
+          <option>Dans 3 à 6 mois</option>
+          <option>Je me renseigne</option>
+        </select>
+      </div>
+    </div>
+    <div class="champ">
+      <label for="etat">État actuel du bien</label>
+      <select id="etat" name="etat">
+        <option value="">Choisir</option>
+        <option>Habité, à rafraîchir</option>
+        <option>Habité, rénovation lourde</option>
+        <option>Vide, avant emménagement</option>
+        <option>Neuf ou livré brut</option>
+      </select>
+    </div>
+    <div class="champ">
+      <label for="budget">Budget envisagé</label>
+      <select id="budget" name="budget">
+        <option value="">Choisir</option>
+        <option>Moins de 3 000 €</option>
+        <option>3 000 à 10 000 €</option>
+        <option>10 000 à 25 000 €</option>
+        <option>25 000 à 60 000 €</option>
+        <option>Plus de 60 000 €</option>
+        <option>Je ne sais pas</option>
+      </select>
+      <span class="aide">Une fourchette suffit. Elle nous évite de vous proposer une solution hors sujet.</span>
+    </div>
+    <div class="champ">
+      <label for="photos">Photos ou plans</label>
+      <input id="photos" name="photos" type="file" multiple accept="image/*,.pdf,.dwg,.xlsx">
+      <span class="aide">Photos des pièces, plans, DCE ou DPGF. Cela accélère beaucoup le chiffrage.</span>
+    </div>
+    <div class="champ">
+      <label for="message">Décrivez votre projet</label>
+      <textarea id="message" name="message" placeholder="Ce que vous voulez faire, les contraintes que vous connaissez déjà."></textarea>
+    </div>
+    <div class="paire">
+      <div class="champ"><label for="nom">Nom et prénom</label>
+        <input id="nom" name="nom" autocomplete="name" required></div>
+      <div class="champ"><label for="tel">Téléphone</label>
+        <input id="tel" name="telephone" type="tel" autocomplete="tel" required></div>
+    </div>
+    <div class="champ"><label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required></div>
+    <div class="champ">
+      <label style="display:flex;gap:.6rem;align-items:flex-start;font-weight:400;font-family:var(--texte);font-size:.94rem">
+        <input type="checkbox" name="rgpd" required style="width:auto;margin-top:.3rem">
+        <span>J'accepte que ces informations soient utilisées pour me recontacter au sujet de ma demande.</span>
+      </label>
+    </div>
+    <button class="btn" type="submit">Envoyer ma demande</button>
+    <p class="etat" role="status" aria-live="polite"></p>
+    <p class="mention" style="margin-top:1rem">Nous vous rappelons dans la journée, jours ouvrés.
+    Vos informations ne sont utilisées que pour traiter votre demande.</p>
+  </form></div></section>
+
+<section class="bloc"><div class="tete"><p class="titre">Préférez appeler ?</p><p class="cote">Du lundi au vendredi</p></div><div class="corps"><h2>Appelez-nous</h2><p class="saut" style="font-family:var(--display);font-size:1.6rem;font-weight:600"><a href="tel:+33XXXXXXXXX" style="text-decoration:none">[06 XX XX XX XX]</a></p><p class="chapo">Ou écrivez à <a href="mailto:contact@asyadeco.fr">contact@asyadeco.fr</a>.</p><div class="actions"><a class="btn creux" href="https://wa.me/33XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20des%20travaux.">Écrire sur WhatsApp</a></div></div></section>
+</div>
+
+</main>
+<script src="assets/menu.js" defer></script>
+<script src="assets/formulaire.js" defer></script>
+<footer class="pied"><div class="wrap">
+  <div class="cols">
+    <div>
+      <a class="marque" href="index.html">ASYA DECO<span>Rénovation intérieure</span></a>
+      <p class="chapo" style="margin-top:1rem;font-size:.95rem">Cloisons, sols, peinture, agencement
+      et finitions. Une seule équipe, un seul interlocuteur.</p>
+    </div>
+    <div><h4>Prestations</h4><ul>
+      <li><a href="peinture.html">Peinture</a></li>
+      <li><a href="platrerie.html">Plâtrerie et cloisons</a></li>
+      <li><a href="parquet.html">Parquet</a></li>
+      <li><a href="carrelage.html">Carrelage et faïence</a></li>
+      <li><a href="agencement.html">Agencement sur mesure</a></li>
+      <li><a href="decoratif.html">Peintures décoratives</a></li>
+      <li><a href="vitrerie.html">Vitrerie</a></li>
+    </ul></div>
+    <div><h4>L'entreprise</h4><ul>
+      <li><a href="entreprise.html">Qui nous sommes</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="professionnels.html">Professionnels</a></li>
+      <li><a href="zone-intervention.html">Zone d'intervention</a></li>
+    </ul></div>
+    <div><h4>Nous joindre</h4><ul>
+      <li><a href="tel:+33XXXXXXXXX">[06 XX XX XX XX]</a></li>
+      <li><a href="mailto:contact@asyadeco.fr">contact@asyadeco.fr</a></li>
+      <li>[adresse de l'atelier], 94360 Bry-sur-Marne</li>
+      <li style="margin-top:.8rem"><a class="btn" href="devis.html">Demander un devis</a></li>
+    </ul></div>
+  </div>
+  <div class="bas">
+    <span>© 2026 ASYA DECO</span>
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="zone-intervention.html">Zone d'intervention</a>
+  </div>
+</div></footer>
+</body>
+</html>
